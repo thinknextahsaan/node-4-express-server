@@ -2,6 +2,11 @@ const mongoose = require("mongoose");
 
 // create a schema for user
 const userSchema = new mongoose.Schema({
+    profilePicture: {
+        type: String,
+        required: true,
+        trim: true,
+    },
     username: {
         type: String,
         required: true,
